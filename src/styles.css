@@ -1,0 +1,68 @@
+body {
+  background: #1c92d2;
+  background: -webkit-linear-gradient(to bottom, #f2fcfe, #1c92d2);
+  background: linear-gradient(to bottom, #f2fcfe, #1c92d2);
+}
+.container {
+  margin-top: 18px;
+}
+
+.heading {
+  margin-bottom: 30px;
+}
+.btn-light {
+  position: relative;
+  top: -4px;
+}
+.current-city {
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+}
+.current-icon {
+  font-size: 180px;
+  color: #587583;
+}
+.current-weather {
+  font-size: 60px;
+}
+.current-info {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  line-height: 28px;
+}
+
+.card-deck {
+  margin-top: 45px;
+  margin-bottom: 5px;
+  height: 280px;
+  text-align: center;
+  font-size: 35px;
+  border-radius: 35px;
+}
+.card {
+  color: #587583;
+}
+.card:hover {
+  color: darkblue;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(15, 39, 255, 0.06);
+}
+.future-icon {
+  font-size: 50px;
+  margin-top: 20px;
+  color: #337fa5;
+}
+
+.pre-search {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #587583;
+}
+.pre-search:hover {
+  background: #9ad0ec;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/52b6175725.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row heading">
+        <div class="col-5">
+          <form id="search-form">
+            <input id="search-city"
+              type="text"
+              placeholder="Enter the city"
+              class="form-control"
+              autofocus
+            />
+         
+        </div>
+        <input type="submit" value="Search🔍" class="btn btn-light col"/>
+         </form>
+        <div class="col-3"></div>
+        <div class="col-1 d-flex justify-content-center pre-search">Paris</div>
+        <div class="col-1 d-flex justify-content-center pre-search">Sydney</div>
+        <div class="col-1 d-flex justify-content-center pre-search">
+          SanFrancisco
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <h1 class="current-city" id="city">Tehran</h1>
+          <p class="current-info"><span id="timenow">
+            Monday 01:00 </span><br />
+            <span id="describtion">clear with periodic clouads</span>
+          </p>
+        </div>
+        <div class="col-6 current-weather">
+          <span id="temp">2</span>° <a  href="#" id="cel-temp">C</a> | <a href="#" id="f-temp">F</a>
+          <i class="fas fa-cloud-sun current-icon"></i>
+        </div>
+        <p class="col-3 current-info more">
+          Precipitation: 4% <br />
+          Humidity: <span id="humidity">48</span>% <br />
+          Wind: <span id="wind">14</span> km/h
+        </p>
+      </div>
+      <br />
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <h1>Tue</h1>
+            <i class="fas fa-cloud-sun future-icon"></i>
+          </div>
+          <div class="row">
+            <div class="col-6">9</div>
+            <div class="col-6">2</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h1>Wed</h1>
+            <i class="fas fa-cloud-rain future-icon"></i>
+          </div>
+          <div class="row">
+            <div class="col-6">11</div>
+            <div class="col-6">-1</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h1>Thu</h1>
+            <i class="fas fa-cloud-sun-rain future-icon"></i>
+          </div>
+          <div class="row">
+            <div class="col-6">8</div>
+            <div class="col-6">1</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h1>Fri</h1>
+            <i class="fas fa-cloud-sun future-icon"></i>
+          </div>
+          <div class="row">
+            <div class="col-6">5</div>
+            <div class="col-6">2</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h1>Sat</h1>
+            <i class="fas fa-cloud-sun future-icon"></i>
+          </div>
+          <div class="row">
+            <div class="col-6">13</div>
+            <div class="col-6">3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
